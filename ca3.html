@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="ca3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <i class="fa fa-utensils"></i> Zomato
+        </div>
+        <div class="location-picker">
+            <i class="fas fa-map-marker-alt"></i>
+            <select>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+                <option>Kolkata</option>
+                <option>Rajahmundry</option>
+                <option>Vizag</option>
+            </select>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for restaurants or dishes..." class="search-input">
+            <button class="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <label for="login-modal" class="login-btn">Login</label>
+    </nav>
+
+    <div class="filters-section">
+        <div class="tabs">
+            <button class="tab active"><i class="fas fa-motorcycle"></i> Delivery</button>
+            <button class="tab"><i class="fas fa-utensils"></i> Dining Out</button>
+            <button class="tab"><i class="fas fa-cocktail"></i> Nightlife</button>
+        </div>
+        
+        <div class="filter-options">
+            <button class="filter-btn">
+                <i class="fas fa-filter"></i> Filters
+                <div class="filter-dropdown">
+                    <div class="filter-item">Cuisines</div>
+                    <div class="filter-item">Dietary</div>
+                    <div class="filter-item">Rating Types</div>
+                    <div class="filter-item">Delivery Time</div>
+                    <div class="filter-item">Table Booking</div>
+                </div>
+            </button>
+            <button class="filter-btn">
+                <i class="fas fa-sort"></i> Rating: 4.0+
+            </button>
+            <button class="filter-btn">
+                <i class="fas fa-wallet"></i> Pure Veg
+            </button>
+            <button class="filter-btn">
+                <i class="fas fa-sort-amount-down"></i> Cost: High to Low
+            </button>
+            <button class="filter-btn">
+                <i class="fas fa-sort-amount-up"></i> Cost: Low to High
+            </button>
+            <button class="filter-btn">
+                <i class="fas fa-map-marker-alt"></i> Distance
+            </button>
+            <button class="filter-btn">
+                <i class="fas fa-fire"></i> Popularity
+            </button>
+            <button class="filter-btn offers-btn">
+                <i class="fas fa-percentage"></i> Offers
+                <span class="offer-badge">New</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Rest of the code remains exactly the same -->
+    <div class="app-banner">
+        <img src="https://b.zmtcdn.com/web_assets/91fd934b79f23aeba3c3908837508c441583820651.png" alt="Zomato App">
+        <div class="app-content">
+            <h2>Get the Zomato App</h2>
+            <p>Download now for faster ordering and personalized recommendations</p>
+            <div class="app-buttons">
+                <a href="#" class="app-btn">
+                    <img src="https://b.zmtcdn.com/web_assets/45c3f4a307375b6fc137a1da3911691f1585820238.png" alt="Play Store">
+                </a>
+                <a href="#" class="app-btn">
+                    <img src="https://b.zmtcdn.com/web_assets/23e8b5b0a3c30e6163b4c583c3b0c9541585820196.png" alt="App Store">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="login-modal" class="modal-toggle">
+    <div class="modal">
+        <div class="modal-content">
+            <label for="login-modal" class="modal-close">&times;</label>
+            <h2>Login</h2>
+            <form class="login-form">
+                <input type="tel" placeholder="Enter Phone Number" maxlength="10">
+                <button type="submit">Send OTP</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="restaurants">
+        <div class="offers-banner">
+            <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="Offers">
+            <div class="offers-content">
+                <h3>Best Offers for You</h3>
+                <p>Up to 50% OFF and additional cashback on select restaurants</p>
+            </div>
+        </div>
+
+        <h2>Popular Restaurants</h2>
+        <div class="restaurant-grid">
+            <div class="restaurant-card">
+                <div class="offer-tag">50% OFF up to ₹100</div>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Spice Garden">
+                <div class="restaurant-info">
+                    <h3>Spice Garden</h3>
+                    <p class="cuisine">North Indian, Chinese</p>
+                    <div class="restaurant-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.2</span>
+                        <span class="timing">35-40 min</span>
+                        <span class="price">₹200 for two</span>
+                    </div>
+                    <div class="menu">
+                        <div class="food-item">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe" alt="Butter Chicken">
+                            <div class="food-details">
+                                <h4>Butter Chicken</h4>
+                                <p>₹350</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="offer-tag">Flat 20% OFF</div>
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Pizza Paradise">
+                <div class="restaurant-info">
+                    <h3>Pizza Paradise</h3>
+                    <p class="cuisine">Italian, Fast Food</p>
+                    <div class="restaurant-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                        <span class="timing">25-30 min</span>
+                        <span class="price">₹300 for two</span>
+                    </div>
+                    <div class="menu">
+                        <div class="food-item">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Margherita Pizza">
+                            <div class="food-details">
+                                <h4>Margherita Pizza</h4>
+                                <p>₹299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="offer-tag">30% OFF + Free Delivery</div>
+                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b" alt="Sushi House">
+                <div class="restaurant-info">
+                    <h3>Sushi House</h3>
+                    <p class="cuisine">Japanese, Asian</p>
+                    <div class="restaurant-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        <span class="timing">40-45 min</span>
+                        <span class="price">₹800 for two</span>
+                    </div>
+                    <div class="menu">
+                        <div class="food-item">
+                            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c" alt="California Roll">
+                            <div class="food-details">
+                                <h4>California Roll</h4>
+                                <p>₹450</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="offer-tag">Buy 1 Get 1 Free</div>
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Burger Joint">
+                <div class="restaurant-info">
+                    <h3>Burger Joint</h3>
+                    <p class="cuisine">American, Fast Food</p>
+                    <div class="restaurant-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.1</span>
+                        <span class="timing">20-25 min</span>
+                        <span class="price">₹150 for two</span>
+                    </div>
+                    <div class="menu">
+                        <div class="food-item">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Classic Burger">
+                            <div class="food-details">
+                                <h4>Classic Burger</h4>
+                                <p>₹249</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="offer-tag">40% OFF up to ₹80</div>
+                <img src="https://images.unsplash.com/photo-1517244683847-7456b63c5969" alt="South Spice">
+                <div class="restaurant-info">
+                    <h3>South Spice</h3>
+                    <p class="cuisine">South Indian</p>
+                    <div class="restaurant-meta">
+                        <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                        <span class="timing">30-35 min</span>
+                        <span class="price">₹100 for two</span>
+                    </div>
+                    <div class="menu">
+                        <div class="food-item">
+                            <img src="https://images.unsplash.com/photo-1630383249896-424e482df921" alt="Masala Dosa">
+                            <div class="food-details">
+                                <h4>Masala Dosa</h4>
+                                <p>₹120</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
